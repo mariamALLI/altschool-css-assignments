@@ -1,0 +1,172 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  #root, #__next {
+    isolation: isolate;
+  }
+
+/* End of CSS Reset */
+
+/* Navigation link styling for the assignments */
+.nav_bar {
+    background-color: #333;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav_bar ul {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    list-style: none;
+}
+
+.nav_bar ul li {
+    margin: 0 1rem;
+}
+
+.nav_bar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+/* End of Navigation link styling for the assignments */
+
+/* Styling for the hero section content */
+@font-face {
+    font-family: 'gilory-regular';
+    src: url('./gilroy-fonts/gilroy-regular.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'gilory-light';
+    src: url('./gilroy-fonts/gilroy-light.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gilory-semibold';
+    src: url('./gilroy-fonts/gilroy-semibold.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'gilory-bold';
+    src: url('./gilroy-fonts/gilroy-bold.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gilory-thin';
+    src: url('./gilroy-fonts/gilroy-thin.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+body {
+    font-family: 'gilory-semibold', sans-serif;
+
+}
+
+
+.hero_section {
+    background-image: url('./assets/Hero\ section.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.menu ul,
+.login ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu ul li,
+.login ul li {
+    margin: 0 1rem;
+    font-family: 'gilory-regular';
+}
+
+.menu ul li a,
+.login ul li a {
+    text-decoration: none;
+    color: #141414;
+    font-weight: 400;
+}
+
+.menu ul li .blue_txt,
+.login ul li a {
+    color: #0065FE;
+}
+
+.login ul li .blue_btn {
+    background-color: #0065FE;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
