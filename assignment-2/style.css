@@ -1,0 +1,243 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+    line-height: calc(1em + 0.5rem);  
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+/* Navigation link styling for the assignments */
+
+nav {
+    background-color: #333;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+/* End of Navigation link styling for the assignments */
+
+header {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    background-color: #666666;
+    border-top: 8px solid #999999;
+    width: 100%;
+    padding: 1rem 0;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    background-color: #fff;
+}
+
+.container h1 {
+    color: #000;
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin-top: 90px;
+    font-weight: 800;
+}
+
+.section-header {
+    margin: 1rem 0;
+    background-color: #FFBF00;
+    border-bottom: 8px solid #CC9900;
+    margin-left: -2rem;
+}
+
+.main {
+    border-bottom: 8px solid #999999;
+    border-top: 1px solid #fff;
+    max-width: 810px;
+}
+
+.main div h2 {
+    color: #000;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    margin-top: -6px;
+    font-weight: 800;
+    padding: 0.5rem 1.5rem;
+}
+
+h1 + p {
+    margin-top: 40px;
+    width: 35ch;
+}
+
+span {
+    color:#009966;
+    font-weight: 800;
+}
+
+.bttr-txt {
+    margin-top: 10px;
+    width: 36ch;
+    margin-bottom: 35px;
+}
+
+.section-text1, .section-text2 {
+    font-weight: 500;
+    width: 35ch;
+    line-height: 25px;
+}
+
+.section-text2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+} 
+
+@media (min-width: 768px){
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style: none;
+    }
+    nav ul li {
+        margin: 0 1.5rem;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+    }
+    nav ul li a:hover {
+        color: #FFBF00;
+    }
+
+    .section-header{
+        width: 390px;
+    }
+
+    .section-text1, .section-text2 {
+        width: 50ch;
+    }
+
+    main {
+        padding: 3.5rem 0;
+    }
+
+    h1 + p, 
+    .bttr-txt,
+    .section-text1, 
+    .section-text2 {
+        font-size: 1.2rem ;
+    }
+}
+
+@media (min-width: 1024px){
+    .section-header{
+        width: 450px;
+        margin-left: -2.5rem;
+    }
+
+    .section-text1, .section-text2 {
+        width: 60ch;
+    }
+
+    main {
+        padding: 4rem 0;
+    }
+
+     .header {
+        margin-left: 6.2rem;
+    } 
+}
+
+@media (min-width: 1200px){
+    nav {
+        padding: 1.5rem 0;
+        font-size: 1.5rem;
+        max-width: 1200px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style: none;
+    }
+
+    nav ul li {
+        margin: 0 1.5rem;
+    }
+
+    .section-header{
+        width: 500px;
+        margin-left: -3rem;
+    }
+
+    .section-text1, .section-text2 {
+        width: 65ch;
+    }
+
+    main {
+        padding: 4.5rem 0;
+    }
+
+    .header {
+        margin-left: 14.2rem;
+    }
+}
+
+@media (min-width: 1440px){
+
+    .section-text1, .section-text2 {
+        width: 65ch;
+    }
+
+    main {
+        padding: 5rem 0;
+    }
+
+    .header {
+        margin-left: 10.2rem;
+    }
+}
