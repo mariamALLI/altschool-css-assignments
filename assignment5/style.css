@@ -41,3 +41,42 @@
   }
 
 /* End of CSS Reset */
+
+
+/* Navigation link styling for the assignments */
+.header {
+  background-color: #ddd;
+  width: 100%;
+  padding: 1rem 0;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+nav {
+  background-color: #333;
+  width: 100%;
+  padding: 1rem 0;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+/* End of Navigation link styling for the assignments */
