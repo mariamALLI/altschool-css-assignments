@@ -110,6 +110,13 @@
     font-style: normal;
 }
 
+@font-face {
+  font-family: 'gilory-medium';
+  src: url('./gilroy-fonts/gilroy-medium.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
 body {
     font-family: 'gilory-semibold', sans-serif;
 
@@ -215,14 +222,16 @@ body {
   width: 125px;
 }
 
-.group1-txt-heading span {
+.group1-txt-heading span,
+.group2_txt_one_heading span,
+.group3_txt_one span {
   color: #005AE2;
 }
 
 .group1_sm_txt {
   color: #141414;
   text-align: center;
-  font-family: 'gilory-regular';
+  font-family: 'gilory-medium';
   font-size: .85rem;
   width: 72.5ch;
   margin: 0 auto;
@@ -237,4 +246,62 @@ body {
 
 .learn_link .blue_txt {
   margin-left: 3rem;
+}
+
+.img_sec {
+  margin: 0 auto;
+}
+
+.img-sec {
+  margin-top: 3.5rem;
+  width: 550px;
+  transform: translate(50%);
+}
+
+/* start of main section */
+.section_numbers {
+  background-color: #F9FBFD;
+}
+
+.group2,
+.group3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.img_numbers {
+  width: 580px;
+}
+
+.group2_txt_one_heading {
+  font-size: 1.5rem;
+}
+
+.group3_txt_one {
+  font-size: 1rem;
+  position: relative;
+}
+
+.img_gradient_line {
+  position: absolute;
+  left: -3%;
+}
+
+.group2_txt_one_heading,
+.group3_txt_one {
+  font-family: 'gilory-bold';
+}
+
+.one_with_icons,
+.two_with_icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.group3_txt_one p {
+  font-family: 'gilory-medium';
+  font-size: 14px;
 }
