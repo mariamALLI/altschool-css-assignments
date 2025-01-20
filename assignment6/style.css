@@ -124,7 +124,7 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1028px;
     margin: 0 auto;
     padding: 0 1rem;
     width: 100%;
@@ -143,10 +143,18 @@ body {
     list-style: none;
 }
 
+.menu ul li {
+  font-family: 'gilory-regular';
+}
+
 .menu ul li,
 .login ul li {
     margin: 0 1rem;
-    font-family: 'gilory-regular';
+    font-size: 14px;
+}
+
+.login ul li {
+  font-family: 'gilory-semibold';
 }
 
 .menu ul li a,
@@ -157,16 +165,76 @@ body {
 }
 
 .menu ul li .blue_txt,
-.login ul li a {
+.login ul li a,
+.learn_link .blue_txt {
     color: #0065FE;
 }
 
-.login ul li .blue_btn {
+.login ul li .blue_btn,
+.learn_link .blue_btn {
     background-color: #0065FE;
     color: #fff;
-    padding: 0.5rem 1rem;
+    padding: 0.7rem 1.5rem;
     border-radius: 20px;
-    cursor: pointer;
+    cursor: pointer; 
 }
 
+.learn_link .blue_btn {
+  padding: 0.5rem 1.7rem;
+}
 
+.learn_link .blue_btn,
+.learn_link .blue_txt {
+  text-decoration: none;
+  font-family:'gilory-semibold' ;
+  font-size: 14px;
+}
+
+.hero_txt {
+  width: 950px;
+  margin: 0 auto;
+  margin-top: 3.5rem;
+}
+
+.group1-txt-heading {
+  color: #141414;
+  font-size: 2rem;
+  font-family: 'gilory-bold';
+  text-align: center;
+  word-spacing: 5px;
+  position: relative;
+}
+
+.img_line {
+  position: absolute;
+  left: 43%;
+  bottom: -6%;
+}
+
+.img-line {
+  width: 125px;
+}
+
+.group1-txt-heading span {
+  color: #005AE2;
+}
+
+.group1_sm_txt {
+  color: #141414;
+  text-align: center;
+  font-family: 'gilory-regular';
+  font-size: .85rem;
+  width: 72.5ch;
+  margin: 0 auto;
+  margin-top: 1rem;
+  padding: 1rem 1.2rem;
+}
+
+.learn_link {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.learn_link .blue_txt {
+  margin-left: 3rem;
+}
