@@ -271,6 +271,10 @@ body {
   padding: 2rem;
 }
 
+.group3 {
+  gap: 20px;
+}
+
 .img_numbers {
   width: 580px;
 }
@@ -286,7 +290,8 @@ body {
 
 .img_gradient_line {
   position: absolute;
-  left: -3%;
+  left: -4%;
+  width: 4px;
 }
 
 .group2_txt_one_heading,
@@ -299,9 +304,48 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 2rem;
+}
+
+.group3_txt_one p,
+.icon_one_wit_txt p,
+.icon_two_wit_txt p,
+.icon_three_wit_txt p,
+.icon_four_wit_txt p {
+  font-size: 12px;
+  font-family: 'gilory-medium';
 }
 
 .group3_txt_one p {
-  font-family: 'gilory-medium';
-  font-size: 14px;
+  width: 37ch;
+  padding: 1rem 0;
+  text-align: left;
+  line-height: 1.8;
+}
+
+.icon_one_wit_txt p,
+.icon_two_wit_txt p,
+.icon_three_wit_txt p,
+.icon_four_wit_txt p {
+  width: 35ch;
+  margin-top: 1rem;
+}
+
+.icon_one_wit_txt h3,
+.icon_two_wit_txt h3,
+.icon_three_wit_txt h3,
+.icon_four_wit_txt h3 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.link-icon,
+.url-icon,
+.qr-code,
+.analytics-icon {
+  width: 45px;
+}
+
+.two_with_icons {
+  margin-top: 3.5rem;
 }
