@@ -2,4 +2,4 @@
  folder for assignment 1-6 
 
 ## Live URL
-![Netlify]('https://altsch-css-assignment.netlify.app/assignment6/')
+[Netlify]('https://altsch-css-assignment.netlify.app/assignment6/')
