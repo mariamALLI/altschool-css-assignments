@@ -179,7 +179,7 @@ body {
 }
 
 .login ul li .blue_btn,
-.learn_link .blue_btn {
+.learn_link .blue_btn , .get_btn{
     background-color: #0065FE;
     color: #fff;
     padding: 0.7rem 1.5rem;
@@ -194,7 +194,8 @@ body {
 .learn_link .blue_btn,
 .learn_link .blue_txt,
 .price_btns .get_custom,
-.price_btns .select_btn {
+.price_btns .select_btn,
+.get_btn {
   text-decoration: none;
   font-family:'gilory-semibold' ;
   font-size: 14px;
@@ -415,9 +416,9 @@ body {
 
 .form_txt {
   background-color: #fff;
-  transform: translate(50%, 50%);
+  transform: translate(60%, 30%);
   padding: 2rem;
-  width: 480px;
+  width: 450px;
   border-radius: 20px;
 }
 
@@ -481,4 +482,93 @@ input::placeholder {
 
 .p_footer span {
   color: #0065FE;
+}
+
+.faqs-section {
+  background-image: url('./assets/FAQs.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.faqs_txt {
+  position: relative;
+  text-align: center;
+  font-family: 'gilory-bold';
+  font-size: 1.2rem;
+  margin-top: 3rem;
+}
+
+.img-line3 {
+  position: absolute;
+  left: 45%;
+  width: 5px;
+}
+
+.faq_img {
+  width: 650px;
+  margin: 0 auto;
+  margin-top: 3.5rem;
+  margin-bottom: 4.5rem;
+}
+
+
+/* revolution link */
+.revolution-link-section {
+  background-image: url('./assets/medium-vector.png');
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+  height: 300px;
+}
+
+.revolution_txt {
+  text-align: center;
+  font-family: 'gilory-bold';
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  color: #fff;
+}
+
+.get_btn {
+  background-color: #005AE2;
+  padding: .85rem 2.5rem;
+  font-size: 14px;
+}
+
+.start-link {
+  margin-top: 2rem;
+}
+
+/* Footer */
+footer {
+  background-image: url('./assets/footer.png');
+  background-size: cover; 
+  background-position: center;
+  padding: 2rem;
+
+}
+
+.footer_txt {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.8rem;
+  align-items: flex-start;
+}
+
+.social_icons {
+  width: 150px;
+}
+
+.f-links {
+  width: 650px;
+}
+
+.copyright {
+ position: relative;
+}
+
+.c_img {
+  position: absolute;
+  right: -10%;
+  width: 250px;
 }
