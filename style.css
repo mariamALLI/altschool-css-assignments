@@ -1,4 +1,3 @@
-/* CSS Reset */
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -23,8 +22,6 @@ p, h1, h2, h3, h4, h5, h6 {
 p {
     text-wrap: pretty;
 }
-/* End of CSS Reset */
-
 /* Navigation link styling for the assignments */
 .header {
     background-color: #ddd;
@@ -62,3 +59,62 @@ nav ul li a {
     color: #fff;
 }
 /* End of Navigation link styling for the assignments */
+
+main {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    background-color: #262626 ;
+    height: 50vh;
+    margin-top: 10rem;
+    border-bottom: 8px solid #fff;
+}
+
+.container {
+    position: relative;
+}
+
+.container header {
+    background-color: #D90479;
+    width: 360px;
+    padding: 0.6rem 1.3rem;
+    position: absolute;
+    z-index: 1;
+    left: 4.8rem;
+    border-radius: 8px;
+    top: -2rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;}
+
+header h1 {
+    text-align: center;
+    padding: 1rem 0;
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+section {
+    background-color: #fff;
+    width: 430px;
+    padding: 2rem 1.5rem;
+    border-radius: 8px;
+    margin-top: 4.5rem;
+    margin-left: 2.5rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+section p {
+    padding: 1rem 1.5rem;
+    width: 360px;
+    font-weight: 900;
+    margin-top: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  
+    header {
+        left: 9.5rem;
+        top: 12.7rem; 
+    }
+   
+}
