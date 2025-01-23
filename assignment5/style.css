@@ -14,6 +14,10 @@
   body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: normal;
   }
   
   img, picture, video, canvas, svg {
@@ -54,7 +58,7 @@
   color: #fff;
 }
 
-nav {
+.nav {
   background-color: #333;
   width: 100%;
   padding: 1rem 0;
@@ -65,18 +69,277 @@ nav {
   cursor: pointer;
 }
 
-nav ul {
+.nav ul {
   display: flex;
   justify-content: center;
   list-style: none;
 }
 
-nav ul li {
+.nav ul li {
   margin: 0 1rem;
 }
 
-nav ul li a {
+.nav ul li a {
   text-decoration: none;
   color: #fff;
 }
 /* End of Navigation link styling for the assignments */
+
+/* styling for nav content */
+.banner {
+  background-color: #F2F2F2;
+  /* padding: 5rem; */
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  /* border-bottom: 1px solid #d1d0d0; */
+}
+
+.img-logo {
+  width: 10rem;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.menu ul li {
+  margin: 0 1rem;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #1D2C3C;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.menu ul li .acct_btn {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solid #1D2C3C;
+}
+
+.line {
+  width: 95%;
+  height: 1px;
+  background-color: #d1d0d0;
+  margin: 0 auto;
+}
+
+/* End of styling for nav content */
+
+/* styling for the main content */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 95%;
+  margin-top: 4rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 580px 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 15px;
+}
+
+.group1-form {
+  background-color: #fff;
+  padding:2.5rem 2rem;
+ border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.line2 {
+  width: 39.5vw;
+  height: 1.5px;
+  background-color: #d1d0d0;
+  margin-left: -2rem;
+  margin-top: 1rem;
+  opacity: 0.3;
+}
+
+.heading h1 {
+  font-size: 1.8rem;
+  color: #1D2C3C;
+  text-shadow: 3px 4px 3px #ccc;
+  font-weight: 400;
+}
+
+.group2 {
+  background-color: #1179BF;
+  padding:2.5rem 2rem;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.side-bar{
+  width: 200px;
+  margin: 0 auto;
+}
+
+.form_input1,
+.form_input2 {
+  margin-top: 2rem;
+}
+
+.basic_info h2,
+.payment_info h2 {
+  font-size: 1rem;
+  color: #1D2C3C;
+  font-weight: 700;
+  margin-left: 2.5rem;
+}
+
+.basic_info,
+.payment_info {
+  position: relative;
+}
+
+.num1,
+.num2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.form1,
+.form2 {
+  margin-top: 1.4rem;
+}
+
+label {
+  font-size: 0.8rem;
+  color: #1D2C3C;
+  font-weight: 400;
+}
+
+.email {
+  margin-top: 1rem;
+  width: 70%;
+  margin-bottom: 2rem;
+}
+
+input[type="text"],
+input[type="email"]{
+  width: 100%;
+  padding: 0.4rem;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #EDEFF2;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder {
+  color: #646E7A;
+  font-size: 12px;
+  padding-left: 15px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  outline: none;
+  border: 1px solid #1179BF;
+}
+
+.form2 {
+  position: relative;
+}
+
+.form2::after {
+  content: " MM / YY    CVC ";
+  position: absolute;
+  right: 15px;
+  top: 60%;
+  color: #646E7A;
+  font-size: 12px;
+  pointer-events: none;
+}
+
+.flex_input {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn_section {
+  margin-top: 2rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #038E7D;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  width: 100%;
+  font-size: .95rem;
+}
+
+.p_txt {
+  position: relative;
+  margin-top: 1.5rem;
+  transform: translateX(30%);
+}
+
+.p_txt p {
+  font-size: 14px;
+  color: #1D2C3C;
+  font-weight: 700;
+}
+
+.p_txt p span {
+  color: #646E7A;
+  font-weight: 400;
+  text-align: left;
+}
+
+.p_txt p .contact {
+  text-decoration: underline;
+  width: 100%;
+}
+
+.q_mark {
+  position: absolute;
+  width: 15px;
+  left: -5%;
+  top: 10%;
+}
+
+.img_stripe {
+  margin-top: 1.5rem;
+  transform: translate(45%, 0);
+}
+
+.img-stripe {
+  width: 85px;
+}
+
+.copyright p {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 14px;
+  color: #636B6F;
+}
+
+.copyright p span {
+  color: #31708F;
+}
