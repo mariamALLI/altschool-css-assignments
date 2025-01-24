@@ -12,6 +12,20 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('sofia-pro/Sofia\ Pro\ Semi\ Bold\ Az.otf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('sofia-pro/Sofia\ Pro\ Light\ Az.otf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
 body {
     -webkit-font-smoothing: antialiased;
   font-family: 'Brown', sans-serif;
@@ -55,6 +69,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #fff;
+    cursor: pointer;
 }
 /* End of Navigation link styling for the assignments */
 
@@ -118,6 +133,7 @@ label {
     font-size: 14px;
     color: #000B0A;
     font-weight: 700;
+    font-family: 'Sofia Pro',   sans-serif;
 }
 
 input[type="text"], input[type="password"], input[type="date"], input[type="number"] {
@@ -125,6 +141,11 @@ input[type="text"], input[type="password"], input[type="date"], input[type="numb
     padding: 0.5rem;
     margin: 0.5rem 0;
     border: 1px solid #E5E5E5;
+    color: #737373;
+    font-family: 'Sofia Pro', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    outline: none;
 }
 
 input:focus {
@@ -132,12 +153,52 @@ input:focus {
     border: 1px solid #2EC4B6;
 }
 
+input::placeholder {
+    color: #737373;
+    font-family: 'Sofia Pro', sans-serif;
+    font-weight: 400;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: url('./assets/calendar-icon.png') no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+    opacity: 1;
+}
+
 select {
     width: 100%;
-    padding: 0.5rem;
+    padding: 0.85rem;
+    padding-right: 1rem;
     margin: 0.5rem 0;
     border: 1px solid #E5E5E5;
+    outline: #2EC4B6;
+    color: #737373;
+    font-family: 'Sofia Pro', sans-serif;
 }
+
+select:focus {
+    outline: none;
+    border: 1px solid #2EC4B6;
+}
+
+select::placeholder {
+    color: #737373;
+    font-family: 'Sofia Pro', sans-serif;
+    font-weight: 400;   
+}
+
+.password {
+    position: relative;
+}
+
+.eye-icon {
+    position: absolute;
+    right: 0.5rem;
+    top: 55%;
+    cursor: pointer;
+}
+
 
 button {
     width: 100%;
@@ -191,6 +252,7 @@ footer {
 
     footer p {
         bottom: -5rem;
+        left: 10%;
     }
 
     .logo {
@@ -254,13 +316,29 @@ footer {
 
     input[type="text"],input[type="date"],input[type="number"], input[type="password"], select {
         width: 100%;
-        padding: 0.85rem 1.75rem;
+        padding: 0.85rem .75rem;
+    }
+
+    input[type="text"] {
+        padding-left: 1.65rem;
+        padding-right: 1.65rem;
+    }
+
+    input[type="date"] {
+        padding-left: 1.75rem;
+       width: 271px;
+       margin-left: 1.5rem;
     }
 
     #gender {
         padding-left: 1rem;
         padding-right: 7.1rem;
         padding-top: 20px;
+        width: 269px;
+    }
+
+    .dob {
+        margin-left: 1.35rem;
     }
 
     button {
@@ -297,11 +375,9 @@ footer {
 
     }
 
-    .weight {
+    .weight,
+    .height {
         width: 48%;
     }
 
-    #dob {
-        padding-right: 2.2rem;
-    }
 }
