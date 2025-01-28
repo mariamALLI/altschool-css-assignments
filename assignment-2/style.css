@@ -156,11 +156,11 @@ span {
     }
 
     .section-header{
-        width: 390px;
+        width: 400px;
     }
 
     .section-text1, .section-text2 {
-        width: 50ch;
+        width: 70ch;
     }
 
     main {
