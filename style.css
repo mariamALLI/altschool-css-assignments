@@ -113,7 +113,11 @@ section p {
     margin-top: 3rem;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 450px) {
+
+    main {
+        height: auto;
+    }
 
     .container header {
         left: 4.5rem;
@@ -124,6 +128,7 @@ section p {
     section {
         width: 300px;
         margin-left: 1.5rem;
+        margin-bottom: 2rem;
     }
 
     section p {
@@ -143,6 +148,5 @@ section p {
     header {
         left: 9.5rem;
         top: 12.7rem; 
-    }
-   
+    }   
 }
