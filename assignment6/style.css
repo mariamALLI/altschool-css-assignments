@@ -57,7 +57,8 @@
 
 .nav_bar ul {
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     list-style: none;
 }
@@ -140,7 +141,9 @@ body {
 
 .nav {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     padding: 1rem 0;
 }
@@ -148,7 +151,10 @@ body {
 .menu ul,
 .login ul {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     list-style: none;
+
 }
 
 .menu ul li {
@@ -183,7 +189,7 @@ body {
 .learn_link .blue_btn , .get_btn{
     background-color: #0065FE;
     color: #fff;
-    padding: 0.7rem 1.5rem;
+    padding: 0.5rem 1.2rem;
     border-radius: 20px;
     cursor: pointer; 
 }
@@ -203,7 +209,7 @@ body {
 }
 
 .hero_txt {
-  width: 950px;
+  width: 100%;
   margin: 0 auto;
   margin-top: 3.5rem;
 }
@@ -219,7 +225,7 @@ body {
 
 .img_line {
   position: absolute;
-  left: 43%;
+  left: 13%;
   bottom: -6%;
 }
 
@@ -239,7 +245,7 @@ body {
   text-align: center;
   font-family: 'gilory-medium';
   font-size: .85rem;
-  width: 72.5ch;
+  width: 40.5ch;
   margin: 0 auto;
   margin-top: 1rem;
   padding: 1rem 1.2rem;
@@ -256,12 +262,13 @@ body {
 
 .img_sec {
   margin: 0 auto;
+  margin-top: 1.5rem;
 }
 
 .img-sec {
-  margin-top: 3.5rem;
-  width: 550px;
-  transform: translate(50%);
+  margin-top: 2rem;
+  width: 350px;
+  transform: translate(-4%, 30%);
 }
 
 /* start of main section */
@@ -273,25 +280,42 @@ body {
 .group3 {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .group3 {
   gap: 20px;
+  justify-content: center;
 }
 
 .img_numbers {
   width: 580px;
 }
 
+.group2_txt_one {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.group2_txt_one,
+.group2_txt_two {
+  margin-top: 1rem;
+}
+
 .group2_txt_one_heading {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .group3_txt_one {
   font-size: 1rem;
   position: relative;
+}
+
+.group3_txt_two {
+
 }
 
 .img_gradient_line {
@@ -313,9 +337,10 @@ body {
 .one_with_icons,
 .two_with_icons {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 2rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
 }
 
 .group3_txt_one p,
@@ -364,7 +389,7 @@ body {
   margin-top: 3.5rem;
 }
 
-/*  */
+/* price section */
 .perfect-price-design,
 .form-section{
   margin-top: 6.5rem;
@@ -373,26 +398,31 @@ body {
 .price_txt {
   text-align: center;
   position: relative;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .img__line {
   position: absolute;
-  left: 28%;
+  left: -1%;
 }
 
 .price_txt p {
-  width: 60ch;
+  width: 40ch;
   margin: 0 auto;
 }
 
 .price_btns {
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .price_btns .get_custom {
   border: 1px solid #0065FE;
-  padding: 0.85rem 1.5rem;
+  padding: 0.5rem 1rem;
   border-radius: 20px;
   font-size: 14px;
 }
@@ -402,12 +432,12 @@ body {
   background-color: #0065FE;
   border: none;
   border-radius: 20px;
-  padding: 0.85rem 2.5rem;
+  padding: 0.5rem 2rem;
   font-size: 14px;
   margin-left: 1rem;
 }
 
-/*  */
+/* form sect */
 .form-section {
   background-image: url('./assets/medium-vector.png');
   background-size: cover;
@@ -415,11 +445,12 @@ body {
   height: 450px;
 }
 
+
 .form_txt {
   background-color: #fff;
-  transform: translate(60%, 30%);
+  transform: translate(1%, 10%);
   padding: 2rem;
-  width: 450px;
+  width: 100%;
   border-radius: 20px;
 }
 
@@ -437,7 +468,8 @@ select {
 }
 
 .paste_input {
-  width: 95%;
+  width: 100%;
+  margin-left: .1rem;
 }
 
 select {
@@ -455,13 +487,14 @@ input::placeholder {
 .two_input,
 .wand_btn {
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
 .wand_btn {
   background-color: #005AE2;
   color: #fff;
-  padding: .65rem 1.5rem;
+  padding: .5rem 1.5rem;
   border: none;
   border-radius: 20px;
   cursor: pointer;
@@ -471,6 +504,7 @@ input::placeholder {
   justify-content: center;
   transform: translate(3%, 3%);
   margin-top: 1rem;
+  flex-direction: row;
 }
 
 .p_footer {
@@ -503,7 +537,7 @@ input::placeholder {
 
 .img-line3 {
   position: absolute;
-  left: 45%;
+  left: 36%;
   width: 5px;
 }
 
@@ -582,7 +616,7 @@ details p {
 .revolution_txt {
   text-align: center;
   font-family: 'gilory-bold';
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-top: 3rem;
   color: #fff;
 }
@@ -595,7 +629,7 @@ details p {
 
 .start-link {
   margin-top: 2rem;
-}
+} 
 
 /* Footer */
 footer {
@@ -608,9 +642,11 @@ footer {
 
 .footer_txt {
   display: flex;
-  justify-content: space-between;
-  margin-top: 2.8rem;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1.5rem;
+  align-items: center;
+  gap: 20px;
 }
 
 .social_icons {
@@ -618,7 +654,7 @@ footer {
 }
 
 .f-links {
-  width: 650px;
+  max-width: 400px;
 }
 
 .copyright {
@@ -627,6 +663,137 @@ footer {
 
 .c_img {
   position: absolute;
-  right: -10%;
+  right: 5%;
+  margin-top: .7rem;
   width: 250px;
+}
+
+
+@media screen and (min-width: 768px) {
+  /* Header */
+  .nav {
+    justify-content: space-between;
+}
+
+.login ul li .blue_btn,
+.learn_link .blue_btn , .get_btn{
+    padding: 0.7rem 1.5rem;
+}
+
+.hero_txt {
+  width: 950px;
+}
+
+.img_line {
+  left: 43%;
+}
+
+.group1_sm_txt {
+  width: 72.5ch;
+}
+
+.img-sec {
+  margin-top: 3.5rem;
+  width: 550px;
+  transform: translate(50%);
+}
+
+.img_sec {
+  margin: 0 auto;
+}
+
+.group2_txt_one {
+  display: block;
+}
+
+.group2,
+.group3 {
+ flex-wrap: nowrap;
+  padding: 2rem;
+}
+
+.group3 {
+  justify-content: space-between;
+}
+
+.one_with_icons, .two_with_icons {
+ flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.group2_txt_one_heading {
+  font-size: 1.5rem;
+}
+
+.price_txt {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.img__line {
+  left: 28%;
+}
+
+.price_btns {
+  flex-wrap: nowrap;
+}
+
+.price_txt p {
+  width: 60ch;
+}
+
+.price_btns .get_custom {
+  padding: 0.85rem 1.5rem;
+  font-size: 14px;
+}
+
+.price_btns .select_btn {
+  padding: 0.85rem 2.5rem;
+  font-size: 14px;
+}
+
+.two_input, .wand_btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.paste_input {
+  width: 95%;
+  margin-left: .5rem;
+}
+
+.form_txt {
+  transform: translate(60%, 30%);
+  width: 450px;
+}
+
+.wand_btn {
+  padding: 0.85rem 1.5rem;
+}
+
+.img-line3 {
+  left: 45%;
+}
+
+.revolution_txt {
+  font-size: 1.5rem;
+}
+
+.footer_txt {
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2.8rem;
+  align-items: flex-start;
+}
+
+.f-links {
+  width: 650px;
+  max-width: 100%;
+}
+
+.c_img {
+  right: -10%;
+}
+
 }
