@@ -49,7 +49,7 @@
 
 /* Navigation link styling for the assignments */
 .header {
-  background-color: #ddd;
+  background-color: #fff;
   width: 100%;
   padding: 1rem 0;
   text-align: center;
@@ -71,7 +71,9 @@
 
 .nav ul {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
   list-style: none;
 }
 
@@ -86,9 +88,8 @@
 /* End of Navigation link styling for the assignments */
 
 /* styling for nav content */
-.banner {
+ .banner {
   background-color: #F2F2F2;
-  /* padding: 5rem; */
   width: 95%;
   margin: 0 auto;
   max-width: 1200px;
@@ -96,32 +97,34 @@
 
 nav {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem;
-  /* border-bottom: 1px solid #d1d0d0; */
+  padding: 1rem .5rem;
 }
 
 .img-logo {
-  width: 10rem;
+  width: 7rem;
 }
 
 .menu ul {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .menu ul li {
-  margin: 0 1rem;
+  margin: 0 .5rem;
 }
 
 .menu ul li a {
   text-decoration: none;
   color: #1D2C3C;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
 }
 
@@ -141,18 +144,19 @@ nav {
 /* End of styling for nav content */
 
 /* styling for the main content */
-main {
+
+ main {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1.2rem;
   width: 95%;
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 .container {
   display: grid;
-  grid-template-columns: 580px 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 595px;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -161,22 +165,23 @@ main {
 
 .group1-form {
   background-color: #fff;
-  padding:2.5rem 2rem;
- border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
+  padding: 0.5rem 1rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
 }
 
 .line2 {
-  width: 39.5vw;
+  width: 80.5vw;
   height: 1.5px;
   background-color: #d1d0d0;
-  margin-left: -2rem;
+  margin-left: -1rem;
   margin-top: 2rem;
   opacity: 0.3;
 }
 
 .heading h1 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: #1D2C3C;
   text-shadow: 3px 4px 3px #ccc;
   font-weight: 400;
@@ -184,14 +189,15 @@ main {
 
 .group2 {
   background-color: #1179BF;
-  padding:2.5rem 2rem;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  padding:.5rem 1rem;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .side-bar{
   width: 200px;
   margin: 0 auto;
+  margin-top: 2rem;
 }
 
 .form_input1,
@@ -232,7 +238,6 @@ label {
 
 .email {
   margin-top: 1rem;
-  width: 70%;
   margin-bottom: 2rem;
 }
 
@@ -275,8 +280,7 @@ input[type="email"]:focus {
 }
 
 .flex_input {
-  display: flex;
-  justify-content: space-between;
+  display: block;
 }
 
 .btn_section {
@@ -298,7 +302,7 @@ button {
 .p_txt {
   position: relative;
   margin-top: 1.5rem;
-  transform: translateX(30%);
+  transform: translateX(15%);
 }
 
 .p_txt p {
@@ -321,13 +325,17 @@ button {
 .q_mark {
   position: absolute;
   width: 15px;
-  left: -5%;
-  top: 10%;
+  left: -10%;
+  top: 7%;
+}
+
+br {
+  display: none;
 }
 
 .img_stripe {
   margin-top: 1.5rem;
-  transform: translate(45%, 0);
+  transform: translate(32%, 0);
 }
 
 .img-stripe {
@@ -343,4 +351,75 @@ button {
 
 .copyright p span {
   color: #31708F;
+}
+
+
+@media screen and (min-width: 768px){
+  nav {
+    flex-direction: row;
+    padding: 1rem 1.5rem;
+  }
+
+  .banner {
+    width: 95%;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 580px 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+  }
+
+  .group1-form {
+    background-color: #fff;
+    width: 100%;
+    padding:2.5rem 2rem;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 0;
+  }
+
+  .group2 {
+    background-color: #1179BF;
+    padding:2.5rem 2rem;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 0;
+  }
+
+  .email {
+    margin-top: 1rem;
+    width: 70%;
+    margin-bottom: 2rem;
+  }
+
+  .flex_input {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .p_txt {
+    transform: translateX(30%);
+  }
+
+  .q_mark {
+    left: -5%;
+    top: 10%;
+  }
+
+  br {
+    display: block;
+  }
+
+  .img_stripe {
+    transform: translate(45%, 0);
+  }
+
+  .line2 {
+    width: 38.5vw;
+  }
 }
