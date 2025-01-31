@@ -1,6 +1,6 @@
 # altschool-css-assignments
 
-- Mariam Alli here pls find my assignments in their repective folders, aside from assignment 1 which is the root index file with its stylesheet and the live URL link below
+- **Mariam Alli** here pls find my assignments in their repective folders, aside from assignment 1 which is the root index file with its stylesheet and the live URL link below
 - The assignment contains 6 folder.
 - Each folder contains a `html` file and a `css` file with various `assets` and `fonts` folders.
 
